@@ -52,7 +52,7 @@ function TipPerson(){
         tipPercent = tipPercent/100;
         let tipValue = Totalbill*tipPercent;
         let PersonTipValue = (tipValue/tipPepole).toFixed(2);
-        let TotalPerson = (Totalbill/tipPepole+(PersonTipValue-'0')).toFixed(2);
+        let TotalPerson = (Totalbill/tipPepole)+(PersonTipValue-'0');
         console.log(PersonTipValue);
         console.log(TotalPerson);
         tipAmout.innerHTML = 
